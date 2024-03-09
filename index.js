@@ -19,6 +19,15 @@ app.get('/', (req, res) =>{
     res.send('hello it is snapgram server!..');
 })
 
+
+
+// import routes
+import userRouter from './routes/user.routes.js'
+
+
+// declear routes
+app.use('/api/v1/user', userRouter);
+
 connectDB()
 .then(()=>{
 
