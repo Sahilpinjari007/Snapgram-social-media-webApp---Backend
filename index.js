@@ -25,11 +25,13 @@ app.get('/', (req, res) =>{
 // import routes
 import userRouter from './routes/user.routes.js'
 import mediaRouter from './routes/media.routes.js'
+import commentRouter from './routes/comment.routes.js'
 
 
 // declear routes
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/media', mediaRouter);
+app.use('/api/v1/media/comment', commentRouter);
 
 
 connectDB()
