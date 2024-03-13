@@ -29,6 +29,7 @@ import commentRouter from './routes/comment.routes.js'
 import likeRouter from './routes/like.routes.js'
 import notificationRouter from './routes/like.routes.js'
 import followerRouter from './routes/follower.routes.js'
+import savedRouter from './routes/saved.routes.js'
 
 
 // declear routes
@@ -38,6 +39,7 @@ app.use('/api/v1/media/comment', commentRouter);
 app.use('/api/v1/like', likeRouter);
 app.use('/api/v1/notification', notificationRouter);
 app.use('/api/v1/u/follow', followerRouter)
+app.use('/api/v1/m/saved', savedRouter);
 
 
 connectDB()
