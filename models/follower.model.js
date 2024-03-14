@@ -6,6 +6,6 @@ const followerSchema = new mongoose.Schema({
     followingId: {type: Schema.Types.ObjectId, ref: "Users"}
 });
 
-const followerModle = mongoose.model('followers', followerSchema);
+const followerModle = mongoose.model('Followers', followerSchema);
 
 export {followerModle};
