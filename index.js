@@ -31,6 +31,7 @@ import followerRouter from './routes/follower.routes.js'
 import savedRouter from './routes/saved.routes.js';
 import shareRouter from './routes/shared.routes.js';
 import notificationRouter from './routes/notification.routes.js'
+import storyRouter from './routes/story.routes.js';
 
 
 // declear routes
@@ -42,6 +43,7 @@ app.use('/api/v1/u/follow', followerRouter)
 app.use('/api/v1/m/saved', savedRouter);
 app.use('/api/v1/m/share', shareRouter)
 app.use('/api/v1/notification', notificationRouter);
+app.use('/api/v1/u/story', storyRouter);
 
 
 connectDB()
